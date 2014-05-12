@@ -1,0 +1,16 @@
+red
+do line 100
+orange
+do line 100
+green
+do line 100
+blue
+do line 100
+purple
+do line 100
+home
+
+def line n {
+    forward n
+    right 144
+}

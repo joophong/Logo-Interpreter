@@ -1,0 +1,29 @@
+set x 10
+set y 10
+set deltaX 10
+set deltaY 0
+repeat 5 {
+    do star x
+    home
+    penup
+    left 180
+    forward deltaX
+    left 90
+    forward deltaY
+    left 72 + 90
+    forward x
+    set x x + 20
+    set y y + 20
+    set deltaX deltaX + 12
+    set deltaY deltaY + 10
+}
+
+def star y {
+    pendown
+    repeat 5 {
+       forward y
+       right 144
+       forward y
+       left 72
+   }
+}
