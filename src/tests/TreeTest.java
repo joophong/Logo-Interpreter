@@ -1,7 +1,3 @@
-/**
- * @author Joopyo Hong
- */
-
 package tests;
 
 import static org.junit.Assert.*;
@@ -17,6 +13,10 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Enumeration;
 
+/**
+ * @author Joopyo Hong
+ * @version April 5, 2014
+ */
 public class TreeTest {
 	Tree<Integer> tree1a, tree1b, tree1c, tree2, tree3a, tree3b;
 	Tree<Integer> tree3c,tree6, tree9, tree54;

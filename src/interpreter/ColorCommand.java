@@ -2,8 +2,8 @@ package interpreter;
 import java.awt.*;
 
 /**
- * @author David Matuszek
- * @version March 31, 2009
+ * @author Joopyo Hong
+ * @version April 12, 2014
  */
 public class ColorCommand implements TurtleCommand {
     Color color;
@@ -14,7 +14,6 @@ public class ColorCommand implements TurtleCommand {
      */
     public ColorCommand(String colorName) {
         this.color = Color.getColor(colorName);
-        // TODO Implement this constructor
     }
     
     /**
@@ -23,7 +22,6 @@ public class ColorCommand implements TurtleCommand {
      */
     public ColorCommand(int number) {
         this.color = new Color(number);
-        // TODO Implement this constructor
     }
     
     /**
@@ -34,7 +32,6 @@ public class ColorCommand implements TurtleCommand {
      */
     public ColorCommand(int red, int green, int blue) {
         this.color = new Color(red, green, blue);
-        // TODO i added this
     }
 
     /**

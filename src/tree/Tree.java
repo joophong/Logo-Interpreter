@@ -1,6 +1,3 @@
-/**
- * @author Joopyo Hong
- */
 
 package tree;
 
@@ -12,6 +9,10 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
+/**
+ * @author Joopyo Hong
+ * @version March 13, 2014
+ */
 public class Tree<V> {
 	private V value;
 	private ArrayList<Tree<V>> children;

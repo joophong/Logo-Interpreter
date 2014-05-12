@@ -1,6 +1,4 @@
-/**
- * @author Joopyo Hong
- */
+
 
 package tests;
 
@@ -19,7 +17,10 @@ import tokenizer.Token;
 import tokenizer.TokenType;
 import tokenizer.Tokenizer;
 
-
+/**
+ * @author Joopyo Hong
+ * @version April 5, 2014
+ */
 public class TokenizerTest {
 	Set<String> keywords = new HashSet<String>();
 	Tokenizer tokenizer;

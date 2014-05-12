@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 
+/**
+ * @author Joopyo Hong
+ * @version March 20, 2014
+ */
 public class Tokenizer {
     public boolean debugging = false;
 	private enum States {

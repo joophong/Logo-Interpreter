@@ -1,8 +1,8 @@
 package interpreter;
 
 /**
- * @author David Matuszek
- * @version March 30, 2009
+ * @author Joopyo Hong
+ * @version April 12, 2014
  */
 public class Turtle {
     private DrawingArea canvas;

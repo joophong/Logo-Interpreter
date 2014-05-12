@@ -18,7 +18,6 @@ import tokenizer.Tokenizer;
 import tree.Tree;
 
 /**
- * @author David Matuszek
  * @author Joopyo Hong
  * @version April 5, 2014
  */

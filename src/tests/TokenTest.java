@@ -1,7 +1,3 @@
-/**
- * @author Joopyo Hong
- */
-
 package tests;
 
 import static org.junit.Assert.*;
@@ -12,6 +8,10 @@ import org.junit.Test;
 import tokenizer.Token;
 import tokenizer.TokenType;
 
+/**
+ * @author Joopyo Hong
+ * @version April 5, 2014
+ */
 public class TokenTest {
 	Token toke1, toke2, toke3, toke4, toke5;
 

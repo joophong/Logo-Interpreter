@@ -5,8 +5,8 @@ import java.awt.*;
  * This is an example of the kind of command that can be
  * executed by an instance of the DrawingCanvas class.
  * 
- * @author David Matuszek
- * @version March 31, 2009
+ * @author Joopyo Hong
+ * @version April 12, 2014
  *
  */
 public class DrawLineCommand implements TurtleCommand {

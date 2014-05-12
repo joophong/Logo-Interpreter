@@ -12,7 +12,6 @@ import tokenizer.Token;
 import tokenizer.TokenType;
 
 /**
- * @author David Matuszek
  * @author Joopyo Hong
  * @version April 12, 2014
  */

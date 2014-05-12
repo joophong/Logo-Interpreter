@@ -1,10 +1,10 @@
-/**
- * @author Joopyo Hong
- */
 
 package tokenizer;
 
-
+/**
+ * @author Joopyo Hong
+ * @version March 20, 2014
+ */
 public class Token {
 	
 	private TokenType type;

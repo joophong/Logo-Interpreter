@@ -7,8 +7,8 @@ import java.awt.Graphics;
  * Graphics, or otherwise interact with it (for example,
  * change color, or move without drawing.)
  * 
- * @author David Matuszek
- * @version March 30, 2009
+ * @author Joopyo Hong
+ * @version April 12, 2014
  *
  */
 interface TurtleCommand {
