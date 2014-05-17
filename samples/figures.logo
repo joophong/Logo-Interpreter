@@ -1,0 +1,40 @@
+set c 255
+
+do newline 0
+set length 35
+repeat 6 {
+    do figures length
+    do newline 1.25 * length
+    set length length + 35
+}
+
+def newline drop {
+    home
+    left 180
+    penup
+    forward 300
+    right 90
+    forward 250 - 2 * drop
+    right 90
+    pendown
+}
+def figures s {
+    blue
+    set m 3
+    repeat 6 {
+        do figure m s
+        set m m + 1
+    }
+    set c 16 * c
+}
+
+def figure s size {
+    set m size / s
+    repeat s {
+        forward m
+        left 360 / s
+    }
+    penup
+    forward size / 2
+    pendown
+}

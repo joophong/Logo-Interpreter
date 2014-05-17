@@ -1,0 +1,69 @@
+set size 40
+jump getX - 2.5 * size getY + 0.5 * size
+red
+do block
+orange
+do block
+yellow
+do block
+green
+do block
+cyan
+do block
+do newRow
+blue
+do block
+purple
+do block
+magenta
+do block
+pink
+do block
+olive
+do block
+do newRow
+black
+do block
+gray
+do block
+white
+do block
+brown
+do block
+tan
+do block
+do border 10
+
+def block {
+  do fillRect size size
+  jump getX + size getY - size
+}
+
+def fillRect width height {
+  set x getX
+  set y getY
+  repeat height {
+    forward width
+    set y y + 1
+    jump x y
+  }
+}
+
+def newRow {
+  jump getX - 5 * size getY - size
+}
+
+def border thickness {
+  home
+  jump getX - 2.5 * size - thickness getY + 1.5 * size
+  color 204 0 0
+  do fillRect 5 * size + 2 * thickness thickness
+  jump getX + 5 * size + thickness getY - 3 * size - thickness
+  color 153 255 51
+  do fillRect thickness 3 * size
+  color 10 204 204
+  jump getX - 5 * size - thickness getY - 3 * size - thickness 
+  do fillRect 5 * size + 2 * thickness thickness
+  color 204 153 255
+  do fillRect thickness 3 * size
+}

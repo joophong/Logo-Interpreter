@@ -1,0 +1,59 @@
+black
+set size 4
+penup
+left 180
+forward 50 * size
+right 180
+pendown
+repeat 10 {
+    forward 10 * size
+    left 36
+}
+
+red
+penup
+forward 30 * size
+left 90
+pendown
+forward 30 * size
+right 180
+forward 20 * size
+left 145
+forward 24 * size
+left 180
+forward 15 * size
+left 75
+forward 22 * size
+penup
+left 50
+forward 10 * size
+
+green
+pendown
+left 70
+forward 32 * size
+right 140
+forward 32 * size
+penup
+right 140
+forward 21 * size
+right 150
+pendown
+forward 14 * size
+penup
+right 30
+forward 20 * size
+left 30
+penup
+forward size
+
+pendown
+blue
+left 90
+forward 15 * size
+left 30
+forward 16 * size
+left 180
+forward 16 * size
+left 120
+forward 16 * size

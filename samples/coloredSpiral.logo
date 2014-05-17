@@ -1,0 +1,58 @@
+set r 240
+set g 0
+set b 0
+set state 0
+set m 1
+set nextState 0
+
+set nextc 0
+
+repeat 500 {
+    repeat 36 {
+        color r g b
+        forward m
+        set m m + 0.001
+        left 5
+        do updateColor 20
+    }
+}
+def updateColor bump {
+    if state = 0 {
+        set g g + bump
+        if g = 240 {
+            set nextState 1
+        }
+    }
+    if state = 1 {
+        set r r - bump
+        if r = 0 {
+            set nextState 2
+         }
+    }
+    if state = 2 {
+        set b b + bump
+        if b = 240 {
+            set nextState 3
+        }
+    }
+    if state = 3 {
+        set g g - bump
+        if g = 0 {
+            set nextState 4
+         }
+    }
+    if state = 4 {
+        set r r + bump
+        if r = 240 {
+            set nextState 5
+        }
+    }
+    if state = 5 {
+        set b b - bump
+        if b = 0 {
+            set nextState 0
+         }
+    }
+    set state nextState
+}
+

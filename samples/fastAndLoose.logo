@@ -1,0 +1,68 @@
+set r 255
+set g 0
+set b 0
+set colorState 0
+set step 64
+
+color r g b
+right 135
+forward 288
+repeat 500 {
+        color r g b
+        repeat 8 {
+            right 120
+            forward 288
+            right 119.687
+            forward 576
+        }
+        do bumpColor
+}
+
+def bumpColor {
+   set nextState colorState
+   if colorState = 0 {
+        set g g + step
+        if g > 254 {
+            set g 255
+            set nextState 1
+        }
+    }
+    if colorState = 1 {
+        set r r - step
+        if r < 1 {
+            set r 0
+            set nextState 2
+        }
+    }
+    if colorState = 2 {
+        set b b + step
+        if b > 254 {
+            set b 255
+            set nextState 3
+        }
+    }
+    if colorState = 3 {
+        set g g - step
+        if g < 1 {
+            set g 0
+            set nextState 4
+        }
+    }
+    if colorState = 4 {
+        set r r + step
+        if r > 254 {
+            set r 255
+            set nextState 5
+        }
+    }
+    if colorState = 5 {
+        set b b - step
+        if b < 1 {
+            set b 0
+            set nextState 0
+        }
+    }
+    set colorState nextState
+}
+
+    

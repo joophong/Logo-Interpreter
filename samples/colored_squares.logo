@@ -1,0 +1,48 @@
+set size 80
+red
+set square 1
+set shift 256
+
+left 180
+forward size
+right 90
+
+while square < 5 {
+    if square = 1 {
+        red
+    }
+    if square = 2 {
+        yellow
+    }
+    else {
+        if square = 3 {
+            green
+        }
+        else {
+            if square > 3 {
+                blue
+            }
+        }
+    }
+    repeat size / 2 {
+        forward size
+        right 90
+        forward 1
+        right 90
+        forward size
+        left 90
+        forward 1
+        left 90
+    }
+    set square square + 1
+    if square = 3 {
+        penup
+        left 90
+        forward 2 * size
+        left 90
+        forward size + 1
+        right 180
+        pendown
+    }
+}
+

@@ -1,0 +1,19 @@
+set count 0
+repeat 8 {
+    home
+    left 45 * count
+    forward 270
+    set count count + 1
+}
+home
+do spiral 198
+
+def spiral n {
+    set distance 2
+    left 22
+    while distance < n {
+        forward distance
+        left 45
+        set distance distance + 2
+    }
+}

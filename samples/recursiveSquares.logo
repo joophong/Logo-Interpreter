@@ -1,0 +1,39 @@
+set c 1
+do squares 0 0 200 5
+home
+
+def squares xx yy length depth {
+    if depth > 0 {
+        if c = 1 {
+            red
+        }
+        else {
+            blue
+        }
+        set c 1 - c
+        set half length / 2
+        do oneSquare xx - half yy - half length
+        do squares xx - half yy - half half depth - 1
+        do squares xx + half yy - half half depth - 1
+        do squares xx - half yy + half half depth - 1
+        do squares xx + half yy + half half depth - 1
+    }
+}
+
+def oneSquare xx yy length {
+    do moveTo xx yy
+    repeat 4 {
+        forward length
+        left 90
+    }
+}
+    
+def moveTo xx yy {
+    home
+    penup
+    forward xx
+    left 90
+    forward yy
+    right 90
+    pendown
+}
